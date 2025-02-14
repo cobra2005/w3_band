@@ -29,13 +29,16 @@ const images = [
     },
 ];
 
-let index = 0; // Vị trí ảnh hiện tại
+// Current image location
+let index = 0;
+slider.innerHTML = images[0].html;
+slider.style.background = `url(${images[0].url}) no-repeat top / cover`;
 
 function changeImage() {
-    index = (index + 1) % images.length; // Chuyển sang ảnh tiếp theo
+    index = (index + 1) % images.length; // Transfer to next image
     slider.innerHTML = images[index].html;
     slider.style.background = `url(${images[index].url}) no-repeat top /
         cover`;
 }
 
-setInterval(changeImage, 4000); // Chuyển ảnh mỗi 4 giây
+setInterval(changeImage, 4000); // Transfer image every 4 seconds

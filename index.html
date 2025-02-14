@@ -26,11 +26,12 @@
 
     <link rel="stylesheet" href="./assets/css/style.css" />
     <body>
-        <div class="app">
-            <div class="header">
+        <div id="app">
+            <div id="header">
+                <!-- Navbar -->
                 <ul class="nav">
                     <li class="nav__item">
-                        <a class="nav__item--link" href="">HOME</a>
+                        <a class="nav__item--link" href="#header">HOME</a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__item--link" href="">BAND</a>
@@ -46,12 +47,14 @@
                             MORE
                             <div class="nav__item--arrow-down"></div>
                         </a>
+                        <!-- Navbar in more button -->
                         <ul class="subnav">
                             <li class="subnav__item">Merchandise</li>
                             <li class="subnav__item">Extras</li>
                             <li class="subnav__item">Media</li>
                         </ul>
                     </li>
+                    <!-- Search button -->
                     <li class="nav__item nav__item--search">
                         <i
                             class="search__icon fa-solid fa-magnifying-glass"
@@ -59,16 +62,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="slider">
-                <div class="slider__text-content">
-                    <h3 class="slider__text-heading">Los Angeles</h3>
-                    <b class="slider__text-description"
-                        >We had the best time playing at Venice Beach!</b
-                    >
-                </div>
-            </div>
-            <div class="content"></div>
-            <div class="footer"></div>
+            <!-- Slider -->
+            <div class="slider"></div>
+            <!-- Content -->
+            <div id="content"></div>
+            <div id="footer"></div>
         </div>
         <script src="./js/main.js"></script>
     </body>
