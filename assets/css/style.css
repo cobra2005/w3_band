@@ -11,6 +11,11 @@
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     height: 46.5px;
     background-color: #000;
     font-family: 'Lato', sans-serif;
@@ -26,14 +31,6 @@
     line-height: 46.5px;
     padding: 0 24px;
     position: relative;
-}
-
-.nav__item--have-subnav {
-    padding-right: 34px;
-}
-
-.nav__item--have-subnav:hover .subnav {
-    display: block;
 }
 
 .nav__item--link {
@@ -76,6 +73,15 @@
     position: absolute;
     left: 0;
     display: none;
+    background-color: var(--white-color);
+}
+
+.nav__item--have-subnav {
+    padding-right: 34px;
+}
+
+.nav__item--have-subnav:hover .subnav {
+    display: block;
 }
 
 .subnav__item {
@@ -98,4 +104,35 @@
 
 .search__icon {
     color: var(--white-color);
+}
+
+.slider {
+    position: relative;
+    padding-top: 50%;
+    background: url('https://www.w3schools.com/w3images/la.jpg') no-repeat top /
+        cover;
+    margin-top: 46.5px;
+}
+
+.slider__text-content {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider__text-heading {
+    color: var(--white-color);
+    font-size: 24px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.slider__text-description {
+    color: var(--white-color);
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    display: block;
+    margin: 15px 0;
 }
